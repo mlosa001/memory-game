@@ -8,12 +8,12 @@ Match cards by clicking and matching them into pairs. Try to win in the least po
 
 - Click one card and try to find its match by clicking and revealing another card.
 
-- Each attempt euqals one move.
+- Each attempt equals one move.
 
 - Try to flip all cards in the least number of moves and time. 
 
 
-## To play: 
+### To play: 
 
 1. Clone this repo or download the compressed files.
 2. Load index.html in your browser.
