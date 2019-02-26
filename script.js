@@ -22,11 +22,8 @@ function shuffle(array) {
   return array;
 }
 
-
-// /*
- //  *   - loop through each card and create its HTML
-//  *   - add each card's HTML to the page
-//  */
+//loop through each card and create its HTML
+//add each card's HTML to the page
 
 //show cards on grid 
 function start() {
@@ -52,33 +49,17 @@ start();
 
 
 //add event listener, display card and put in open, also compare cards 
-
-/*
- * set up the event listener for a card. If a card is clicked:
- *  - display the card's symbol (put this functionality in another function that you call from this one)
- *  *  - add the card to a *list* of "open" cards (put this functionality in another function that you call from this one)
- *   - if the list already has another card, check to see if the two cards match
- *    + if the cards do match, lock the cards in the open position (put this functionality in another function that you call from this one)
- *    + if the cards do not match, remove the cards from the list and hide the card's symbol (put this functionality in another function that you call from this one)
- * 
-
- */
+//set up the event listener for a card.
 
  function click(card) {
   /* card click event */
   card.addEventListener("click", function () {
     const clickedCard = this;
-
-    // // if cards match keep open and show else remove 
-    
-
+  // // if cards match keep open and show else remove 
     openCard(clickedCard);
-
     addToOpen(clickedCard);
-    
 
-    //when click add opened classes and push to opened array
-
+//when click add opened classes and push to opened array
 //shows card
 function openCard() {
   clickedCard.classList.add('open', 'show', "disabled");
@@ -89,13 +70,10 @@ function addToOpen() {
 
   if(openedArray.length == 2){
    match(clickedCard);
-
  }
-
 }
 
-});
-
+  });
 }
 
 function match() {
